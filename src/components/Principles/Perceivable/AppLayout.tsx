@@ -10,7 +10,7 @@ import {
 } from "@patternfly/react-core";
 import { ReactNode } from "react";
 import { NavLink } from "react-router-dom";
-import accessbilityImage from "../../../accessibility.jpg";
+import accessbilityImage from "../../../images/accessibility.jpg";
 
 interface IProps {
   children: ReactNode;

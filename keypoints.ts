@@ -77,6 +77,12 @@ Captions and Transcripts for video and audio information
 - Screen magnification to navigate the web.
 https://www.youtube.com/watch?v=4ZRVDgeMpXc
 
+- eslint-plugin-jsx-a11y eslint plugin to add accessibility check directly
+in your JSX.
+
+- @axe-core/react It catch any issues on the final rendered DOM and show error
+in the chrome devtools console.
+
 International Standard for web accessibility
 
 The guideline and success criteria are organized around the following
