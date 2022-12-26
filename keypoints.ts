@@ -57,7 +57,7 @@ We use like this "Signup for the family plan" "more information for family plan"
 
 - List items properly align.
 
-- Captions makes video accessible
+- Captions makes video accessible.
 
 - Provide proper space, font size, color contrast.
 
@@ -88,7 +88,7 @@ International Standard for web accessibility
 The guideline and success criteria are organized around the following
 four principles:
 
-4 Principles:
+4 Principles: (POUR)
 
 - Perceivable
 - Operable
@@ -166,7 +166,8 @@ https://www.udemy.com/course/microfrontend-course/learn/lecture/23206832#overvie
 
 3. Adaptable
 Website content should be properly aligned and structured which can be
-seen properly on any device like mobile, web, tablet.
+seen properly on any 
+device like mobile, web, tablet.
 Heading and lists are correctly coded.
 A lot of people benefit from proper heading strcuture,
 
