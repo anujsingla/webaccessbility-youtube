@@ -50,6 +50,15 @@ export function Resources() {
             https://reactjs.org/docs/accessibility.html
           </a>
         </ListItem>
+        <ListItem>
+          <a
+            href="https://courses.idrc.ocadu.ca/understandinga11y/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://courses.idrc.ocadu.ca/understandinga11y/
+          </a>
+        </ListItem>
       </List>
     </>
   );

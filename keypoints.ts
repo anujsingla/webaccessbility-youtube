@@ -1,5 +1,5 @@
 /*
-Web accessbility
+Web accessibility
 
 What we will learn from this playlist:
 - What is Web accessibility and how it is benefit for disable people
@@ -182,7 +182,116 @@ user should easily see error, success message.
 - User can control the audio, video like pause, stop, adjust the volume.
 - Foreground and background color combination should be accurate.
 
+- Operable
+operable synonym - usable, functional, useful, practicable,
+availabe
+User interface components and navigation must be operable/functional.
+User must be able to operate (navigate) the interface.
 
+Principle 1 (Perceivable) -User will be able to perceive the content on
+the web. Principle 2 (Operable) Once visitors can percieve the content,
+they must be able to act on it. The content must be operable.
+
+- Keyboard Accessible (Make all functionality available from a keyboard instead
+  of a mouse)
+- Enough Time (Give time to users to perform actions)
+- Seizures (Avoid flashes or flickers information as it may trigger seizures)
+- Navigable (Users can easily navigate, find contents).
+
+- Keyboard Accessible
+We should make our website UI in such a way it can be accessible by
+keyboard. Make all functionality available from a keyboard.Users don't need
+to use mouse.
+A common way to move from one component to another component by pressing
+tab key. A component like button should have visible focus around the selected
+button or link in the list.
+We can access web fast by keyboard if you know the shortcuts.
+
+<Example - Show on the website (https://www.w3.org/WAI/)>
+
+Why we make web pages accessible without a mouse?
+- Some users don't want to use mouse.
+- Some users have difficulties using a mouse.
+- Blind users can see screen and not able to see mouse pointer.
+- Low vision may have trouble to see the mouse pointer on the screen.
+- Some users not able to hold the mouse for the long time.
+- Some users forgot for left, right, double clicks.
+
+No Keyboard trap:
+A keyboard trap is an area of a web page where a person
+gets stuck and can not come out without a mouse.
+Textarea and media are the main culprints for this.
+We should provide proper information to escape from a keyboard trap.
+
+- Enough Time
+We should provide enough time to read and use content on the web.
+Some users have problems to understand information fast or take more time
+to use the content. Some users have learning disability to read text.
+Users who use assistive technologies need more time to consume information
+on a web page. Screeen reader users need to explore a page before they 
+understand how the page is organized.
+Seniors citizen or low vision users need to zoom a lot to process information.
+Banking websites or other secure website automatically logout after some
+period of time. They should provide proper time period, what time you have or
+have no possiblity to extend that time. Users will not confuse if you provide
+proper information on the web.
+Some website need to update the content frequently like news, weather reports,
+stock market.
+We can provide someways to users to refresh website content like provide
+dropdown 15,30,60 minutes or manually refresh the page.
+Users can set it as per their requirement.
+
+- Flashing and Seizures
+Some users have problem with flashing or flicking lights
+Try to avoid some content on the web.
+- Flashes more than three times in one second.
+- Covers a large area of the screen.
+- Is very bright.
+
+There are three reason for flickering lights on computer screen:
+- Flashes can be caused by display
+- Flashes can be caused by computer setting how it renders images or other
+content on the screen.
+- Flashes can be caused by content like SVG images or animation.
+
+As a developer or content author, we don't have control for first two but we
+can control for content animation.
+Try to avoid or disable animation from interactions if it is not essential.
+Examples:
+https://www.google.com/search?q=svg+animation+gif&tbm=isch&hl=en-US&sa=X&ved=2ahUKEwjQ88SQhpn8AhWojNgFHVz1C0cQrNwCKAB6BQgBEPkB&biw=1522&bih=758#imgrc=MaNxzOc2fRLbSM
+https://www.google.com/search?q=svg+animation+gif&tbm=isch&hl=en-US&sa=X&ved=2ahUKEwjQ88SQhpn8AhWojNgFHVz1C0cQrNwCKAB6BQgBEPkB&biw=1522&bih=758#imgrc=1hNx_ufnRJIFmM
+
+Who does this help?
+- Users have certain seizure or migraine disorders.
+- users who have difficulty tracking moving objects.
+- Users who have attention deficit disorders.
+
+- Navigable
+We should structure our content in such a way so that users can easily navigate,
+find content, and determine where they are.
+Screen reader users navigate from heading to heading to check the information.
+Some users only navigate by keyboard also.
+We should divide large information or large block of content like text 
+passages into smaller one and adding heading to each.
+Divide long form into small one.
+It help to navigate content and understand it easily.
+We should also update the page title as per page content like homepage,
+shopping car or checkout page, Product page.
+Example: Explain by ecommerge website like amazon
+Skip to content:
+Many web pages have repeated content like navigation links in the header.
+We show same links on every page. Suppose if page has 10 navigation on every
+page then users need to press 10 tabs to navigate it and go on the main
+content.
+we can skip this by using "skip to content" link as the first link on every
+page.
+Example: https://github.com/
+<Navigate the page and use "skip to content" link>
+
+
+Source:
+https://courses.idrc.ocadu.ca/understandinga11y/1_perceivable.html
+https://learning.edx.org/course/course-v1:W3Cx+WAI0.1x+3T2019/block-v1:W3Cx+WAI0.1x+3T2019+type@sequential+block@6e4c1abff9594e6a8f5138b1ade5c4cf/block-v1:W3Cx+WAI0.1x+3T2019+type@vertical+block@3b020caf4f38401fbe71f056a6fefc84
 
 Source:
 https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#text_alternatives
