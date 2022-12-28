@@ -1,5 +1,6 @@
 import { List, ListItem } from "@patternfly/react-core";
 import { Resources } from "./Resources";
+
 export function Home() {
   return (
     <>
@@ -43,6 +44,25 @@ export function Home() {
               (@axe-core/react) - https://www.npmjs.com/package/@axe-core/react
             </ListItem>
           </List>
+        </ListItem>
+      </List>
+      <br />
+      <h2>
+        WCAG categorized guidelines into three levels that represents the
+        importance of each guidelines:
+      </h2>
+      <List>
+        <ListItem>
+          <b>Level A:</b> Must be done or some group will not be able to access
+          the content.
+        </ListItem>
+        <ListItem>
+          <b>Level AA:</b> Should be done, or some group will have difficulty
+          accessing the content.
+        </ListItem>
+        <ListItem>
+          <b>Level AAA:</b> Can be done to improve usability or enhance
+          accessibility further.
         </ListItem>
       </List>
       <br />

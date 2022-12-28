@@ -95,6 +95,13 @@ four principles:
 - Understandable
 - Robust
 
+WCAG categorized guidelines into three levels that represents the importance
+of each guidelines:
+- Level A: Must be done or some group will not be able to access the content.
+- Level AA: Should be done, or some group will have difficulty accessing the
+content.
+- Level AAA: Can be done to improve usability or enhance accessibility further.
+
 - Perceivable
 Perceivable Synonyms -> open, clear, visible, recognizable
 https://www.wordhippo.com/what-is/another-word-for/perceivable.html
