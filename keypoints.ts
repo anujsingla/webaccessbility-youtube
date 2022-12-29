@@ -295,6 +295,89 @@ page.
 Example: https://github.com/
 <Navigate the page and use "skip to content" link>
 
+- Understandable
+In Principle 1, we learn users can see the content.
+In principle 2, we learn users can interact with content.
+In principle 3, We will learn, users can undserstand and read the content.
+We should use simple proper language. Try to avoid abbreviations, unusual
+words and phrases. If we want to use it, please explain in details so that
+anybody with disability or without disability can easily understand it.
+The site is not fully accessible if they cannot make sense of it.
+
+
+Abbreviations (https://englishgrammarhere.com/abbreviations/10-abbreviations-and-meaning-in-english/):
+LOL: Laugh out loud
+OMG: Oh my God
+
+Unusual words (https://www.thelanguagegallery.com/blog/10-unusual-words-to-add-to-your-english-vocabulary)
+Not easy to understand, we need to check on google or with any expert for meaning.
+
+Phrases (https://www.ef.edu/english-resources/english-idioms/)
+Better late than never - Better to arrive late than not to come at all.
+Call it a day - Stop working on something.
+
+Readable content
+Predictable content
+Input Assistance
+
+- Readable content
+Content should be readable and understandable for all the 
+users (with disability or without disability).
+
+- Identify the primary language on the page. <html lang="en">
+- Explain abbreviations, unusual words, and phrases
+- Use simple language which is easy to understand.
+- Avoid Jargon words (Jargon words are special or technical words that are
+  understable by a goup of people in a particular profession.)
+  SPAM, BUGS, Algorithm, many more.
+
+
+- Predictable content
+We should use consistent pattern in our website like links or position of the link,
+button color, shape of headers or many more.
+It helps users to understand or readable our content on the web.They can
+easily predict the content and easy to understand it.
+If you use different header tag for different header then it is not easily to
+understand by disabled users because they are not able to understand either
+it is h1 or h2 tag or reason behind it.
+Pressing the tab, which is normally use to jump from one control to another,
+should not initiate the search.
+
+- Input Assistance
+It means Users to understand the process of entering information. When user
+fill the form details, we should provide proper information, which field
+is required and what need to fill in the input area. If user gets error on the
+screen, how to recover from it.
+People with disability maybe get few errors if we don;t provide proper
+instruction in the form.
+This guideline seeks to reduce the number of errors that users make and help
+users understand what they must do to correct errors.
+
+Who will get help from this:
+- People with disabilities
+- People with screen reader
+- People with braille
+- People who are colorblind
+
+https://www.w3.org/WAI/tutorials/forms/
+https://www.w3.org/WAI/fundamentals/accessibility-principles/#tolerant
+
+
+- Robust
+Robust means web content is compatible with different browsers,
+assistive technologies and other user agents.
+
+In Principle 1, we learn users can see the content.
+In principle 2, we learn users can interact with content.
+In principle 3, We learn users can undserstand and read the content.
+In principle 4, We will learn, users must be able to access the content
+on different machine, browser or devices.
+
+We should develop our web in such a way, it will not break in the new version
+or assistive technologies.
+Web technologies change quickly and our web application should work with
+present and future technologies.
+
 
 Source:
 https://courses.idrc.ocadu.ca/understandinga11y/1_perceivable.html
@@ -303,6 +386,7 @@ https://learning.edx.org/course/course-v1:W3Cx+WAI0.1x+3T2019/block-v1:W3Cx+WAI0
 Source:
 https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#text_alternatives
 https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable
+https://developer.mozilla.org/en-US/docs/Web/Accessibility
  */
 
 export {};

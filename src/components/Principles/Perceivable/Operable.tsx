@@ -1,3 +1,5 @@
+import { Resources } from "./Resources";
+
 export function Operable() {
   return (
     <>
@@ -126,6 +128,8 @@ export function Operable() {
           this by using "skip to content" link as the first link on every page.
         </p>
       </div>
+      <br />
+      <Resources />
     </>
   );
 }
