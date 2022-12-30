@@ -59,6 +59,24 @@ export function Resources() {
             https://courses.idrc.ocadu.ca/understandinga11y/
           </a>
         </ListItem>
+        <ListItem>
+          <a
+            href="https://www.w3.org/WAI/tutorials/forms/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://www.w3.org/WAI/tutorials/forms/
+          </a>
+        </ListItem>
+        <ListItem>
+          <a
+            href="https://www.w3.org/WAI/fundamentals/accessibility-principles/#tolerant"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://www.w3.org/WAI/fundamentals/accessibility-principles/#tolerant
+          </a>
+        </ListItem>
       </List>
     </>
   );
