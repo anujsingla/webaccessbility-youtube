@@ -195,9 +195,9 @@ availabe
 User interface components and navigation must be operable/functional.
 User must be able to operate (navigate) the interface.
 
-Principle 1 (Perceivable) -User will be able to perceive the content on
-the web. Principle 2 (Operable) Once visitors can percieve the content,
-they must be able to act on it. The content must be operable.
+In Principle 1, we learn users can see the content.
+In principle 2, we will learn, users can interact with content.
+They must be able to act on it.
 
 - Keyboard Accessible (Make all functionality available from a keyboard instead
   of a mouse)
@@ -296,9 +296,11 @@ Example: https://github.com/
 <Navigate the page and use "skip to content" link>
 
 - Understandable
+
 In Principle 1, we learn users can see the content.
 In principle 2, we learn users can interact with content.
 In principle 3, We will learn, users can undserstand and read the content.
+
 We should use simple proper language. Try to avoid abbreviations, unusual
 words and phrases. If we want to use it, please explain in details so that
 anybody with disability or without disability can easily understand it.
