@@ -522,6 +522,8 @@ Always try to use native html elements because html support all the type of
 assistive technology.
 
 How to view accessibility tree?
+https://developer.chrome.com/blog/full-accessibility-tree/
+https://web.dev/the-accessibility-tree/
 
 Source:
 https://courses.idrc.ocadu.ca/understandinga11y/1_perceivable.html

@@ -68,7 +68,7 @@ export function ARIAExamples() {
           onChange={(e) => onChangeFirstName(e.target.value)}
         />
         {firstName && (
-          <div aria-atomic="true" aria-live="polite">
+          <div aria-atomic="true" aria-live="assertive">
             Welcome {`${firstName} alertlive`}
           </div>
         )}
