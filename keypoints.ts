@@ -397,7 +397,7 @@ accessibility tree. It modify an element role, name, state, properties for
 assistive technologies.
 
 
-Three features of ARIA:
+Features of ARIA:
 Roles, Properties, States, Name
 
 Roles:
