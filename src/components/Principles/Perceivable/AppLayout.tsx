@@ -32,6 +32,9 @@ export function AppLayout({ children }: IProps) {
         <NavItem itemId="Robust">
           <NavLink to="robust">Robust</NavLink>
         </NavItem>
+        <NavItem itemId="ARIA">
+          <NavLink to="aria">ARIA</NavLink>
+        </NavItem>
       </NavList>
     </Nav>
   );

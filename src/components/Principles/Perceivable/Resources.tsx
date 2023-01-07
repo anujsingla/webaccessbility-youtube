@@ -77,6 +77,33 @@ export function Resources() {
             https://www.w3.org/WAI/fundamentals/accessibility-principles/#tolerant
           </a>
         </ListItem>
+        <ListItem>
+          <a
+            href="https://benmyers.dev/blog/aria-labels-and-descriptions/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://benmyers.dev/blog/aria-labels-and-descriptions/
+          </a>
+        </ListItem>
+        <ListItem>
+          <a
+            href="https://courses.idrc.ocadu.ca/understandinga11y/1_perceivable.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://courses.idrc.ocadu.ca/understandinga11y/1_perceivable.html
+          </a>
+        </ListItem>
+        <ListItem>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
+          </a>
+        </ListItem>
       </List>
     </>
   );

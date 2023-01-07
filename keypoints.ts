@@ -380,10 +380,153 @@ or assistive technologies.
 Web technologies change quickly and our web application should work with
 present and future technologies.
 
+WAI-ARIA
+Web Accessibility Initiative — Accessible Rich Internet Applications (WAI-ARIA)
+It helps to improve the accessiblity of web to people with disabilities. 
+WCAG (web accessibility guideline) focus on static web content and ARIA 
+focus on making interaction or dynamic content more accessible. 
+Interaction like submitting the form, purchasing from ecommerence, 
+select value from dropdown, modals, many more.
+
+Note:
+You should only use WAI-ARIA when you need to. Always try to use
+semantic elements. Try to not use it if not required. It does not modify
+the DOM or add new functionality to elements. It won't change elements
+behaviour in any way. It just manipulates elements represenation in the
+accessibility tree. It modify an element role, name, state, properties for
+assistive technologies.
+
+
+Three features of ARIA:
+Roles, Properties, States, Name
+
+Roles:
+It defines what kind of UI element is this? It is a button, checkbox, text
+or else.
+ARIA roles used to describe elements that don't exist in html or not
+full support in browser or user don't want to use semantic elements.
+HTML introduce semantic elements to define page features <nav>, <footer>
+<header> <aside> or many more. Before that users use CSS classes or IDs
+to achieve this but it is problematic for screen readers or assistive technology.
+<div class="nav"></div>
+The role attribute provide semantics. many semantic elements have role like
+<input type="radio">, it has radio as a role.
+<ul role="tabpanel"></ul>
+<div role="form"></div> 
+<form></form> (semantic form) - Always use this one
+
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
+https://www.w3.org/TR/wai-aria-1.1/#role_definitions
+
+Properties:
+It is used to give extra meaning to the elements.
+aria-required="true" - It indicates user input is required on the elements before
+submit the form.
+
+aria-labelledby - All interactive elements must have an accessible name.
+It is used to reference another element to define its accessible name.
+<button> <a> has their accessible name between opening closing tag.
+But <input> <textarea> get accessible name via label elements.
+
+<div id="tbLabel">Email Address *</div>
+<div
+  role="textbox"
+  contenteditable
+  aria-labelledby="tblabel"
+  aria-required="true"
+  id="email1">
+</div>
+
+<label for="email1">Email Address (required)</label>
+<input type="email" id="email1" required />
+
+States:
+It is used to define the current conditions of elements like enable, disable,
+hide, selected
+aria-disabled="true" -> It define form input is disabled to the screen reader.
+We change state programmatically via javascript.
+
+aria-hidden - It helps to hide the elements to exposed to screen readers or
+accessiblitity API or tree. It remove elements and children from the accessible
+tree.
+It is used for collapsed content, hide modal, sidebar, images, icons.
+Don't use on focusable elements.
+
+Resources:
+ARIA Github link: https://github.com/w3c/aria/
+https://www.w3.org/WAI/standards-guidelines/aria/
+
+Name:
+A label or identifier for element. It is used by screenreader to announce
+an element.
+
+Difference between aria-label, aria-labelledby, aria-describedby
+aria-label - It is used to override element name and replacing it with
+name given by you.
+<button aria-label="Close">
+	×
+</button>
+
+aria-labelledby - It is used to override the element name and replace it with
+the content of another element. aria-labelledby is set to the id of another
+element.
+<div id="tbLabel">Email Address *</div>
+<div
+  role="textbox"
+  contenteditable
+  aria-labelledby="tblabel"
+  aria-required="true"
+  id="email1">
+</div>
+
+aria-describedby - It is used to set element description of the another 
+element. It takes an id of another element same as aria-labelledby.
+It provide extra information of the element.
+<form>
+	<label for="name">name</label>
+	<input id="name" type="text" aria-describedby="nameValue" />
+	<p id="nameValue">
+		Name may contain alphanumeric characters.
+	</p>
+</form>
+
+ARIA Live Regions:
+Suppose something is dynamically updates on the screen like alert message,
+time changes as per timer or many more. How screen reader know and let
+user know that content has changed.
+aria-live attribure let's screen reader know that content will change
+dynamically, they should take care and announce those changes as per priority.
+assertive - It is high priority and screen reader interrupt user actions
+to announce changes.
+polite - it is low priority and screen reader wait untitl the user is done
+to announuce updates.
+aria-atomic="true" - It is used to read all the content inside the aria-live
+region by the screen reader.
+It can be applied to any html elements.
+Try to not use if content is not important.
+https://www.w3.org/TR/wai-aria-1.1/#aria-live
+
+Accessibility tree
+It is a part of DOM. It provides information from the DOM in a format
+that can be understood by assistive technologies like screen reader,
+speech input software.
+It needs semantic information of the element like button. It needs 4 properties
+of the element like
+Name, description, state, role.
+Suppose if you have button on the screen and you can easily see the button
+but if you are blind and use screen reader then you can not see it. You will
+use assistive technologies to check it on the web. Screen reader need to
+tell that it is button, state of the button. Accessibility tree provides
+all the information to the assistive technologies.
+Always try to use native html elements because html support all the type of
+assistive technology.
+
+How to view accessibility tree?
 
 Source:
 https://courses.idrc.ocadu.ca/understandinga11y/1_perceivable.html
 https://learning.edx.org/course/course-v1:W3Cx+WAI0.1x+3T2019/block-v1:W3Cx+WAI0.1x+3T2019+type@sequential+block@6e4c1abff9594e6a8f5138b1ade5c4cf/block-v1:W3Cx+WAI0.1x+3T2019+type@vertical+block@3b020caf4f38401fbe71f056a6fefc84
+https://benmyers.dev/blog/aria-labels-and-descriptions/
 
 Source:
 https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#text_alternatives
