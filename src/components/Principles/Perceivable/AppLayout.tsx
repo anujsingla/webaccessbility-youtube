@@ -18,25 +18,33 @@ interface IProps {
 
 export function AppLayout({ children }: IProps) {
   const PageNav = (
-    <Nav aria-label="Nav" variant="horizontal">
-      <NavList>
-        <NavItem itemId="Perceivable">
-          <NavLink to="perceivable">Perceivable</NavLink>
-        </NavItem>
-        <NavItem itemId="Operable">
-          <NavLink to="operable">Operable</NavLink>
-        </NavItem>
-        <NavItem itemId="Understandable">
-          <NavLink to="understandable">Understandable</NavLink>
-        </NavItem>
-        <NavItem itemId="Robust">
-          <NavLink to="robust">Robust</NavLink>
-        </NavItem>
-        <NavItem itemId="ARIA">
-          <NavLink to="aria">ARIA</NavLink>
-        </NavItem>
-      </NavList>
-    </Nav>
+    <>
+      <a className="skipMainContent" href="#main-content">
+        Skip to content
+      </a>
+      <Nav aria-label="Nav" variant="horizontal">
+        <NavList>
+          <NavItem itemId="Perceivable">
+            <NavLink to="perceivable">Perceivable</NavLink>
+          </NavItem>
+          <NavItem itemId="Operable">
+            <NavLink to="operable">Operable</NavLink>
+          </NavItem>
+          <NavItem itemId="Understandable">
+            <NavLink to="understandable">Understandable</NavLink>
+          </NavItem>
+          <NavItem itemId="Robust">
+            <NavLink to="robust">Robust</NavLink>
+          </NavItem>
+          <NavItem itemId="ARIA">
+            <NavLink to="aria">ARIA</NavLink>
+          </NavItem>
+          <NavItem itemId="htmlForm">
+            <NavLink to="htmlForm">Forms</NavLink>
+          </NavItem>
+        </NavList>
+      </Nav>
+    </>
   );
   const Header = (
     <PageHeader
@@ -50,7 +58,9 @@ export function AppLayout({ children }: IProps) {
   );
   return (
     <Page header={Header}>
-      <PageSection variant={PageSectionVariants.light}>{children}</PageSection>
+      <PageSection id="main-content" variant={PageSectionVariants.light}>
+        {children}
+      </PageSection>
     </Page>
   );
 }

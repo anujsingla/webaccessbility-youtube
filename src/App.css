@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.mr {
+  margin-right: 5px;
+}
+
+.ml {
+  margin-left: 5px;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.color-red {
+  color: red;
+}
+
+.skipMainContent {
+  background-color: black;
+  color: white;
+  height: 30px;
+  opacity: 0;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skipMainContent:focus {
+  transform: translateY(0%);
+  opacity: 1;
+}

@@ -199,7 +199,7 @@ In Principle 1, we learn users can see the content.
 In principle 2, we will learn, users can interact with content.
 They must be able to act on it.
 
-- Keyboard Accessible (Make all functionality available from a keyboard instead
+- Keyboard-only Accessible (Make all functionality available from a keyboard instead
   of a mouse)
 - Enough Time (Give time to users to perform actions)
 - Seizures (Avoid flashes or flickers information as it may trigger seizures)
@@ -524,6 +524,48 @@ assistive technology.
 How to view accessibility tree?
 https://developer.chrome.com/blog/full-accessibility-tree/
 https://web.dev/the-accessibility-tree/
+
+Forms:
+
+Always try to use semantic html form elements like form, button, label,
+input.
+A semantic elements has clearly identifies its purpose but non semantic
+elements don;t tell you what kind of content like div, span.
+Best Practices:
+1. Every input element should have related label.
+2. Every fieldset should have a legend element that describes the grouping.
+3. Try to mention proper error or successful message to the user.
+4. Use semantic html form elements
+5. Provide instructions for screen readers with ARIA labels like aria-label,
+aria-labeledby, aria-describedby or many more.
+6. Provide proper instruction to fill the form like password, name, email.
+7. Don't autosubmit the form after fill the form, it is not easy to understand
+by disable users
+8. Forms should be accessible via keyboard.
+9. Provide meaningful error messages and tell the user how to fix the error.
+10. 
+
+How to add "Skip to Main Content" Link?
+
+There are lot of links on each page in the starting like navigation, bread
+crumb, search input box or many more.
+It is useful for our application because it helps to navigate the pages
+on the website. It is very easy for point and click users to navigate it but
+it creates bad experience for screen readers or keyboard-only users.
+Suppose if you are navigating your page via keyboard-only then you need to
+first tab on every navigation and then you will go on the main content.
+If page has 10 navigation then you need to click on 10 tab on every page.
+Screen reader users also face same issue and they need to traverse all the
+navigation menu items to reach for main content.
+"Skip to Main Content" is an plain link and we set before the main navigation
+menu at the top, linking to the main content on the page.
+We hide the link and made visible when it is in focus.
+It helps users to directly go on the main content and skip the navigation.
+Check amazon website (https://www.amazon.in/).
+
+
+A "Skip to Main Content"
+https://www.w3.org/TR/WCAG20-TECHS/G1.html
 
 Source:
 https://courses.idrc.ocadu.ca/understandinga11y/1_perceivable.html
