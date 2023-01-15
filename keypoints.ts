@@ -567,6 +567,7 @@ Check amazon website (https://www.amazon.in/).
 A "Skip to Main Content"
 https://www.w3.org/TR/WCAG20-TECHS/G1.html
 
+Auditing Library/Tools
 @axe-core/react and eslint-plugin-jsx-a11y
 These are auditing library which help us to fix the accessibility issue
 while developing the app.

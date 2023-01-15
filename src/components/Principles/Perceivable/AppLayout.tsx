@@ -20,7 +20,7 @@ export function AppLayout({ children }: IProps) {
   const PageNav = (
     <>
       <a className="skipMainContent" href="#main-content">
-        Skip to content
+        Skip to main content
       </a>
       <Nav aria-label="Nav" variant="horizontal">
         <NavList>
