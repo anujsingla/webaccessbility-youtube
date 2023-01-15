@@ -1,6 +1,7 @@
 // import { useState } from "react";
 
 import { useState } from "react";
+import { AuditingToolsExample } from "./AuditingToolsExample";
 
 const mailformat = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 
@@ -170,6 +171,7 @@ export function FormExamples() {
           </div>
         </div>
       </form>
+      <AuditingToolsExample />
     </>
   );
 }

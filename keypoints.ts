@@ -567,6 +567,48 @@ Check amazon website (https://www.amazon.in/).
 A "Skip to Main Content"
 https://www.w3.org/TR/WCAG20-TECHS/G1.html
 
+@axe-core/react and eslint-plugin-jsx-a11y
+These are auditing library which help us to fix the accessibility issue
+while developing the app.
+These tools automatically check for accessibility issues during development
+and helps to fix low hanging issues.
+
+eslint-plugin-jsx-a11y
+This eslint plugin helps to show accessibility warning in the IDE if we made
+any mistake while writing code.
+It is static checker for accessibility rules on JSX elements.
+Create react app include this plugin by default. You can easily configure
+it in your app also if you are not using CRA.
+You can set if you want accessibility rule as a sticky or recommendation way.
+plugin:jsx-a11y/recommended, plugin:jsx-a11y/strict
+<label>test</label> Without htmlFor
+<img width="100" height="100" src={dinosaurImage} /> 
+Without alt text
+
+https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
+
+
+@axe-core/react
+It helps to show accessibility warning in the Chrome DevTool console.
+It tests the final rendered DOM in the browser.
+"axe-core" is the world's leading lightweight accessibility testing engine
+which can be used to automatically test the output of an app against
+multiple WCAG rules to help pinpoint and fix accessibility issues.
+@axe-core/react helps to integrate the "axe-core" power in React app.
+
+if (process.env.NODE_ENV !== "production") {
+  const axe = require("@axe-core/react");
+  axe(React, ReactDOM, 1000);
+}
+
+https://www.npmjs.com/package/@axe-core/react
+https://www.npmjs.com/package/axe-core
+https://reactjs.org/docs/accessibility.html
+https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/
+
+Writing Automated Tests for Accessibility:
+https://www.deque.com/blog/writing-automated-tests-accessibility/
+
 Source:
 https://courses.idrc.ocadu.ca/understandinga11y/1_perceivable.html
 https://learning.edx.org/course/course-v1:W3Cx+WAI0.1x+3T2019/block-v1:W3Cx+WAI0.1x+3T2019+type@sequential+block@6e4c1abff9594e6a8f5138b1ade5c4cf/block-v1:W3Cx+WAI0.1x+3T2019+type@vertical+block@3b020caf4f38401fbe71f056a6fefc84
