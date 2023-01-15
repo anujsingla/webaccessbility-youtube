@@ -1,6 +1,7 @@
 // import { useState } from "react";
 
 import { useState } from "react";
+import { AuditingToolsExample } from "./AuditingToolsExample";
 
 const mailformat = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 
@@ -103,7 +104,7 @@ export function FormExamples() {
           </div>
         </div>
         <div className="mb">
-          <label className="mr">
+          <label htmlFor="email2" className="mr">
             Email
             <b className="ml">*</b>
           </label>
@@ -111,7 +112,7 @@ export function FormExamples() {
             <input
               type="email"
               name="name"
-              id="email"
+              id="email2"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -125,25 +126,28 @@ export function FormExamples() {
         <div className="mb" role="group" aria-labelledby="gender">
           <div id="gender">Gender</div>
           <div>
-            <input type="radio" name="gendername" value="male" id="male" />
-            <label className="ml">Male</label>
+            <input type="radio" name="gendername" value="male" id="male2" />
+            <label htmlFor="male2" className="ml">
+              Male
+            </label>
           </div>
           <div>
-            <input type="radio" name="gendername" value="female" id="female" />
-            <label>Female</label>
+            <input type="radio" name="gendername" value="female" id="female2" />
+            <label htmlFor="female2">Female</label>
           </div>
         </div>
         <div className="mb">
-          <label className="mr">
+          <label htmlFor="placeholder" className="mr">
             Placeholder
             <b className="ml">*</b>
           </label>
           <div>
-            <input type="text" placeholder="text value" />
+            <input id="placeholder" type="text" placeholder="text value" />
           </div>
         </div>
       </form>
       <br />
+      <AuditingToolsExample />
     </>
   );
 }
