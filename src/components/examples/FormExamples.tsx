@@ -1,7 +1,6 @@
 // import { useState } from "react";
 
 import { useState } from "react";
-import { AuditingToolsExample } from "./AuditingToolsExample";
 
 const mailformat = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 
@@ -15,76 +14,49 @@ export function FormExamples() {
       <h2>Form Examples:</h2>
       <br />
       <b>Form as per web accessibility:</b>
-      <form className="pf-c-form">
+      <form>
         <div className="mb">
-          <label className="mr" htmlFor="full-name">
-            Full Name
-            <b className="ml">*</b>
-          </label>
+          <label htmlFor="full-name">Full Name</label>
+          <b className="ml">*</b>
           <div>
             <input
               type="text"
-              name="name"
               id="full-name"
-              aria-describedby="fullNameExtraDesc"
-              aria-required="true"
               required
+              aria-required="true"
+              aria-describedby="fullname-desc"
             />
-            <div id="fullNameExtraDesc">
-              Include your middle name if you have one.
-            </div>
           </div>
+          <div id="fullname-desc">Include middle name if you have one.</div>
         </div>
         <div className="mb">
-          <label className="mr" htmlFor="email">
-            Email
-            <b className="ml">*</b>
-          </label>
+          <label htmlFor="email">Email</label>
+          <b className="ml">*</b>
           <div>
             <input
               type="email"
-              name="name"
               id="email"
-              aria-required="true"
-              aria-describedby="invalidEmail expirationWarning"
-              aria-invalid={!onValidateEmail()}
-              required
-              value={email}
               onChange={(e) => setEmail(e.target.value)}
-            />
-            {!onValidateEmail() && (
-              <div
-                className="color-red"
-                aria-atomic="true"
-                id="invalidEmail"
-                aria-live="polite"
-              >
-                Please enter valid email id - {email}
-              </div>
-            )}
-          </div>
-        </div>
-        <div className="mb">
-          <label className="mr" htmlFor="password">
-            Password
-            <b className="ml">*</b>
-          </label>
-          <div>
-            <input
-              type="password"
-              name="name"
-              id="password"
-              aria-describedby="passwordExtraDesc"
-              aria-required="true"
               required
+              aria-required="true"
+              aria-describedby="email-desc invalidEmail"
+              aria-invalid={!onValidateEmail()}
             />
-            <div id="passwordExtraDesc">
-              Use 8 or more characters with a mix of letters, numbers & symbols
-            </div>
           </div>
+          <div id="email-desc">Please provide valid email id</div>
+          {!onValidateEmail() && (
+            <div
+              className="color-red"
+              id="invalidEmail"
+              aria-atomic="true"
+              aria-live="polite"
+            >
+              Please enter valid email id - {email}
+            </div>
+          )}
         </div>
         <div className="mb" role="group" aria-labelledby="gender">
-          <div id="gender">Gender</div>
+          <div id="gender"> Gender</div>
           <div>
             <input type="radio" name="gendername" value="male" id="male" />
             <label className="ml" htmlFor="male">
@@ -99,24 +71,15 @@ export function FormExamples() {
           </div>
         </div>
         <div className="mb">
-          <label className="mr" htmlFor="message">
-            Message
+          <label className="mr" htmlFor="city">
+            Favorite City
           </label>
           <div>
-            <textarea id="message" />
-          </div>
-        </div>
-        <div className="mb">
-          <label className="mr" htmlFor="favoriteCity">
-            Which is your favorite city?
-          </label>
-          <div>
-            <select id="favoriteCity" name="select">
-              <option value="1">Pune</option>
-              <option value="2">Mumbai</option>
-              <option value="3">Chandigarh</option>
-              <option value="4">Ambala</option>
-              <option value="5">Karnal</option>
+            <select id="city" name="select">
+              <option value="pune">Pune</option>
+              <option value="delhi">Delhi</option>
+              <option value="chandigarh">Chandigarh</option>
+              <option value="karnal">karnal</option>
             </select>
           </div>
         </div>
@@ -170,8 +133,17 @@ export function FormExamples() {
             <label>Female</label>
           </div>
         </div>
+        <div className="mb">
+          <label className="mr">
+            Placeholder
+            <b className="ml">*</b>
+          </label>
+          <div>
+            <input type="text" placeholder="text value" />
+          </div>
+        </div>
       </form>
-      <AuditingToolsExample />
+      <br />
     </>
   );
 }
