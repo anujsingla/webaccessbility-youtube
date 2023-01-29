@@ -68,3 +68,8 @@
   opacity: 1;
   transform: translateY(0%);
 }
+
+button:focus {
+  color: red !important;
+  outline: 1px dotted black !important;
+}

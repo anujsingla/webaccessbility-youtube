@@ -16,7 +16,7 @@ export function Perceivable() {
         <br />
         <div>
           <p>Without alt attribute:</p>
-          <img width="100" height="100" src={dinosaurImage} />
+          <img alt="" width="100" height="100" src={dinosaurImage} />
         </div>
         <div>
           <p>With alt attribute:</p>

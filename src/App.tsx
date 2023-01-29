@@ -1,5 +1,6 @@
 // import React from "react";
 // import logo from "./logo.svg";
+import "./App.scss";
 import "./App.css";
 import { AppLayout } from "./components/Principles/Perceivable/AppLayout";
 import { BrowserRouter as Router } from "react-router-dom";

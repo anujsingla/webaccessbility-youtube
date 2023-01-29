@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { AccessibleModalExamples } from "../../examples/AccessibleModal/AccessibleModalExamples";
 import { ARIA } from "./ARIA";
 import { Home } from "./Home";
 import { HtmlForm } from "./HtmlForm";
@@ -17,6 +18,7 @@ function AppRoutes() {
       <Route path="robust" element={<Robust />} />
       <Route path="aria" element={<ARIA />} />
       <Route path="htmlForm" element={<HtmlForm />} />
+      <Route path="accessibleModal" element={<AccessibleModalExamples />} />
     </Routes>
   );
 }

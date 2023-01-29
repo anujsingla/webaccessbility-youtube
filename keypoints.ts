@@ -619,6 +619,40 @@ Source:
 https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#text_alternatives
 https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable
 https://developer.mozilla.org/en-US/docs/Web/Accessibility
- */
+ 
+
+Accessible React Modal 
+In this video, we will make accessible react modal with example.
+Try to make with accessible react modal with self written code
+Try to make with accessible react modal with library
+
+A modal is float above the rest of the main content. It is an in-window popup.
+We use modal to display information without navigate to the another webpage.
+Like show form, success, error message, confirmation message or many more use cases.
+It is important to make app accessible in the modal. We need to manage
+focus when the user in and out of the modal.
+
+For accessibility we need to take care few scenarios like:
+1- When modal open, Set initial focus on the first focusable element in the modal
+2- User should not interact with the rest of the page outside of an open modal.
+3- User can easily navigate to the focusable elements with tab and Tab+Shift
+4- Modal should be close with Esc key and focus return the element that invoked
+the modal.
+5- User aria-label and aria-describedby to give the modal an accessible name.
+6- We can easily open/close the modal using the keyboard.
+7- Modal should be outside the hierarchy of the main content area.
+
+We will use keydown event listener to check the type of keypress by the user.
+If user press Esc key, we will close the modal.
+createPortal function - It helps to render elements into a different
+part of the DOM.
+It allow us to render the modal directly in the body of the document.
+We set aria-hidden=true for main content and aria-hidden=false for modal
+It helps to remove the main content from accessible tree and screen reader
+will not read it.
+Screen reader only know about open modal. It is easy for screen reader users.
+
+
+*/
 
 export {};

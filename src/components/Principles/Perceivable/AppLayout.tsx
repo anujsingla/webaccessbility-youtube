@@ -42,6 +42,9 @@ export function AppLayout({ children }: IProps) {
           <NavItem itemId="htmlForm">
             <NavLink to="htmlForm">Forms</NavLink>
           </NavItem>
+          <NavItem itemId="accessibleModal">
+            <NavLink to="accessibleModal">Accesible Modal</NavLink>
+          </NavItem>
         </NavList>
       </Nav>
     </>
